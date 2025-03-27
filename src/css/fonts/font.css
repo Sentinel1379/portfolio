@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("./Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("./Roboto/static/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url("./Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("./Poppins/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+}

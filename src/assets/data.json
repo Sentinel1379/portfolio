@@ -1,0 +1,176 @@
+{
+    "about": {
+        "text": "I am a front-end and Web-app developer and a passionate freelancer with one year of experience. which includes mastering React technologies, working with APIs, communicating between front and back end, and fully responsive website design. I am capable of building various types of websites such as personal, office, and online stores. My goal is to create beautiful and functional websites tailored to the specific needs of my clients, always exploring new and innovative ways to do so. I am a team player, committed to progress and continuously expanding my knowledge.",
+        "summury": {
+            "name": "Sadegh Analooee",
+            "email": "sadeghanalooee31@gmail.com",
+            "phone": "09186916027"
+        },
+        "skills": [
+            {
+                "id": 1,
+                "title": "CSS & HTML",
+                "percentage": 90
+            },
+            {
+                "id": 2,
+                "title": "Tailwind",
+                "percentage": 90
+            },
+            {
+                "id": 3,
+                "title": "Bootstrap",
+                "percentage": 90
+            },
+            {
+                "id": 4,
+                "title": "SASS",
+                "percentage": 80
+            },
+            {
+                "id": 5,
+                "title": "JavaScript",
+                "percentage": 60
+            },
+            {
+                "id": 6,
+                "title": "React.js",
+                "percentage": 80
+            },
+            {
+                "id": 7,
+                "title": "Next.js",
+                "percentage": 60
+            },
+            {
+                "id": 8,
+                "title": "Fetch & Axios",
+                "percentage": 80
+            },
+            {
+                "id": 9,
+                "title": "Typescript",
+                "percentage": 70
+            },
+            {
+                "id": 10,
+                "title": "Git & GitHub",
+                "percentage": 75
+            }
+        ]
+    },
+    "experiences": [
+        {
+            "id": 3,
+            "type": "Employee",
+            "date": "2024/3 - 2025/2",
+            "companyName": "Collaboration with Webitern Company",
+            "companySite": "",
+            "descriptionText": "Part-time collaboration (remote) - as a technical support for Frontend students",
+            "descriptionPages": [],
+            "siteAddress": "https://webitern.com/"
+        },
+        {
+            "id": 2,
+            "type": "Project (English)",
+            "date": "2024/4 - 2024/6",
+            "companyName": "Collaboration with the Ronak Software Dolphin Company",
+            "companySite": "",
+            "descriptionText": "In this project, a user panel was created to display 3D models (.ifc files) using a canvas. The panel consists of 4 pages:",
+            "descriptionPages": [
+                "1. Login page",
+                "2. Projects page: This page displays all projects and allows users to create new projects and delete existing ones.",
+                "3. Each project page: This page displays the uploaded files for each project and allows users to add or delete files.",
+                "4. 3D file display page"
+            ],
+            "siteAddress": "Private"
+        },
+        {
+            "id": 1,
+            "type": "Project (Persian)",
+            "date": "2024/1 - 2024/3",
+            "companyName": "Collaboration with the Ronak Software Dolphin Company",
+            "companySite": "",
+            "descriptionText": "In this project, a user panel was created to display 3D models (.ifc files) using a canvas. The panel consists of 4 pages:",
+            "descriptionPages": [
+                "1. Login page",
+                "2. Projects page: This page displays all projects and allows users to create new projects and delete existing ones.",
+                "3. Each project page: This page displays the uploaded files for each project and allows users to add or delete files.",
+                "4. 3D file display page"
+            ],
+            "siteAddress": "Private"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "url": "https://digikala-panel.vercel.app",
+            "urlGitHub" : "https://github.com/Sentinel1379/digikalaPanel",
+            "src": "/src/assets/portfolio/dgkala-panel.png",
+            "title": "Sample of dgkala-panel site (Pesian)",
+            "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 1,
+            "url": "https://sentinel1379.github.io/shop-tailwind/",
+            "urlGitHub" : "https://github.com/Sentinel1379/shop-tailwind",
+            "src": "/src/assets/portfolio/shop.png",
+            "title": "Sample of shop-tailwind site (Pesian)",
+            "tech": [" tailwindcss, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 2,
+            "url": "https://zabanmehrpub-com-s4bb.vercel.app/",
+            "urlGitHub" : "https://github.com/Sentinel1379/zabanmehrpub.com",
+            "src": "/src/assets/portfolio/zabanmehrpub.png",
+            "title": "Sample of Zabanmehrpub site (Pesian)",
+            "tech": [" React.js, " , "Bootstrap, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 3,
+            "url": "https://sentinel1379.github.io/snappfood/",
+            "urlGitHub" : "https://github.com/Sentinel1379/snappfood",
+            "src": "/src/assets/portfolio/snappfood.png",
+            "title": "Sample of snappfood site (Pesian)",
+            "tech": [" SASS, " , "Bootstrap, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 3,
+            "url": "https://sentinel1379.github.io/Car-shop/",
+            "urlGitHub" : "https://github.com/Sentinel1379/Car-shop",
+            "src": "/src/assets/portfolio/CarShop.png",
+            "title": "Sample of Car-shop site (English)",
+            "tech": [ "Bootstrap, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 4,
+            "url": "https://sentinel1379.github.io/Tapsi.ir/",
+            "urlGitHub" : "https://github.com/Sentinel1379/Tapsi.ir",
+            "src": "/src/assets/portfolio/tapsi.ir.png",
+            "title": "Sample of Tapsi site (English)",
+            "tech": [ "SASS, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 5,
+            "url": "https://sentinel1379.github.io/MyRestaurant/",
+            "urlGitHub" : "https://github.com/Sentinel1379/MyRestaurant",
+            "src": "/src/assets/portfolio/MyRestaurant.png",
+            "title": "Sample of MyRestaurant site (English)",
+            "tech": [ "SASS, " , "Resposive design, ..... "]
+        },
+        {
+            "id": 6,
+            "url": "https://sentinel1379.github.io/varzesh3.com/",
+            "urlGitHub" : "https://github.com/Sentinel1379/varzesh3.com",
+            "src": "/src/assets/portfolio/varzesh3.com.png",
+            "title": "Sample of varzesh3 site (English)",
+            "tech": [ "SASS, " , "Resposive design, ..... "]
+        }
+    ],
+    "socialMedia" : {
+        "github": "https://github.com/Sentinel1379",
+        "linkedin": "https://www.linkedin.com/in/snotech/",
+        "whatsApp" : "https://wa.me/989366797817",
+        "telegram" : "https://t.me/sno_tech"
+    }
+}
