@@ -106,7 +106,7 @@
             "id": 1,
             "url": "https://digikala-panel.vercel.app",
             "urlGitHub" : "https://github.com/Sentinel1379/digikalaPanel",
-            "src": "/portfolio/shop.png",
+            "src": "/portfolio/dgkala-panel.png",
             "title": "Sample of dgkala-panel site (Pesian)",
             "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "]
         },
@@ -122,7 +122,7 @@
             "id":3,
             "url": "https://zabanmehrpub-com-s4bb.vercel.app/",
             "urlGitHub" : "https://github.com/Sentinel1379/zabanmehrpub.com",
-            "src": "/public/portfolio/zabanmehrpub.png",
+            "src": "/portfolio/zabanmehrpub.png",
             "title": "Sample of Zabanmehrpub site (Pesian)",
             "tech": [" React.js, " , "Bootstrap, " , "Resposive design, ..... "]
         },
@@ -130,7 +130,7 @@
             "id": 4,
             "url": "https://sentinel1379.github.io/snappfood/",
             "urlGitHub" : "https://github.com/Sentinel1379/snappfood",
-            "src": "/public/portfolio/snappfood.png",
+            "src": "/portfolio/snappfood.png",
             "title": "Sample of snappfood site (Pesian)",
             "tech": [" SASS, " , "Bootstrap, " , "Resposive design, ..... "]
         },
@@ -138,7 +138,7 @@
             "id": 5,
             "url": "https://sentinel1379.github.io/Car-shop/",
             "urlGitHub" : "https://github.com/Sentinel1379/Car-shop",
-            "src": "/public/portfolio/CarShop.png",
+            "src": "/portfolio/CarShop.png",
             "title": "Sample of Car-shop site (English)",
             "tech": [ "Bootstrap, " , "Resposive design, ..... "]
         },
@@ -146,7 +146,7 @@
             "id": 6,
             "url": "https://sentinel1379.github.io/Tapsi.ir/",
             "urlGitHub" : "https://github.com/Sentinel1379/Tapsi.ir",
-            "src": "/public/portfolio/tapsi.ir.png",
+            "src": "/portfolio/tapsi.ir.png",
             "title": "Sample of Tapsi site (English)",
             "tech": [ "SASS, " , "Resposive design, ..... "]
         },
@@ -154,7 +154,7 @@
             "id": 7,
             "url": "https://sentinel1379.github.io/MyRestaurant/",
             "urlGitHub" : "https://github.com/Sentinel1379/MyRestaurant",
-            "src": "/public/portfolio/MyRestaurant.png",
+            "src": "/portfolio/MyRestaurant.png",
             "title": "Sample of MyRestaurant site (English)",
             "tech": [ "SASS, " , "Resposive design, ..... "]
         },
@@ -162,7 +162,7 @@
             "id": 8,
             "url": "https://sentinel1379.github.io/varzesh3.com/",
             "urlGitHub" : "https://github.com/Sentinel1379/varzesh3.com",
-            "src": "/public/portfolio/varzesh3.com.png",
+            "src": "/portfolio/varzesh3.com.png",
             "title": "Sample of varzesh3 site (English)",
             "tech": [ "SASS, " , "Resposive design, ..... "]
         }
