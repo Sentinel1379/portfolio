@@ -17,6 +17,7 @@ export default function Portfolio(props) {
         key={index}
         style={{ width: "100%", height: "auto", overflow: "hidden" }}
         className=" cursor-pointer"
+        
       >
         <img
           src={pro.src}
