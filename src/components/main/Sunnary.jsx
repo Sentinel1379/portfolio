@@ -45,7 +45,7 @@ export default function Summary(props) {
     <>
       <div
         ref={props.heroRef}
-        className="overflow-clip md:px-80 px-10 section w-full min-h-[100vh] relative flex-center"
+        className="overflow-clip md:px-80 px-10 section w-full md:min-h-[100vh] min-h-[90vh] relative flex-center"
       >
         <div className="absolute size-full cover-box z-2"></div>
         

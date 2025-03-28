@@ -17,6 +17,10 @@ export default function WorkExperience(props) {
     }
   }, [window.innerWidth]);
 
+  useEffect(() => {
+    console.log(props.workRef);
+  }, []);
+
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -41,10 +45,10 @@ export default function WorkExperience(props) {
   return (
     <>
       <div
-        ref={props.workRef}
-        className="flex-center flex-col py-10 md:px-80 lg:pl-140 px-10 overflow-clip scroll-mt-92"
+        
+        className="flex-center flex-col py-20 md:px-80 lg:pl-140 px-10 overflow-clip scroll-mt-92"
       >
-        <div className="container flex-center">
+        <div className="container flex-center" ref={props.workRef}>
           <h2 className="experience-title flex-center">Working Experience</h2>
         </div>
 
@@ -79,7 +83,10 @@ export default function WorkExperience(props) {
 
                       <h5 className="mt-5">
                         Site Address:
-                        <a href={exp.siteAddress} className="ml-4 font-montserrat">
+                        <a
+                          href={exp.siteAddress}
+                          className="ml-4 font-montserrat"
+                        >
                           {exp.siteAddress}
                         </a>
                       </h5>
@@ -113,7 +120,10 @@ export default function WorkExperience(props) {
                       })}
                       <h5 className="mt-5">
                         Site Address:
-                        <a href={exp.siteAddress} className="ml-4 font-montserrat">
+                        <a
+                          href={exp.siteAddress}
+                          className="ml-4 font-montserrat"
+                        >
                           {exp.siteAddress}
                         </a>
                       </h5>

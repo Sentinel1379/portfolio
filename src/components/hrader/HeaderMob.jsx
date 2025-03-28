@@ -53,7 +53,7 @@ export default function HeaderMob(props) {
 
     const options = {
       root: null,
-      threshold: 0.9, // می‌توانید این مقدار را بر اساس نیاز تغییر دهید
+      threshold: 0.6, // می‌توانید این مقدار را بر اساس نیاز تغییر دهید
     };
 
     const observerCallback = (entries) => {

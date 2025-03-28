@@ -1,31 +1,43 @@
 import { Carousel } from "react-responsive-carousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import data from "../../assets/data.json";
+import LoadingImage from "./LoadingImage";
 
 export default function Portfolio(props) {
-
   const carouselRef = useRef(null);
+  const [thumbsLoaded, setThumbsLoaded] = useState({});
 
   const renderThumbs = () => {
     return data.projects.map((pro, index) => (
       <div
         key={index}
         style={{ width: "100%", height: "auto", overflow: "hidden" }}
-        className=" cursor-pointer"
-        
+        className="relative cursor-pointer"
       >
         <img
           src={pro.src}
           alt="zabanmehrpub"
-          className="w-full md:h-80 h-50"
+          className={`w-full md:h-80 h-50 `}
           title={`thumb-${index}`}
           loading="lazy"
+          onLoad={() => {
+            setThumbsLoaded((prev) => ({ ...prev, [index]: true }));
+          }}
+          onError={() => {
+            // اضافه کردن هندلر برای خطا
+            setThumbsLoaded((prev) => ({ ...prev, [index]: true }));
+          }}
         />
+        {!thumbsLoaded[index] && (
+          <div className="absolute top-0 left-0 w-full h-full" title={`thumb-${index}`}>
+            <LoadingImage />
+          </div>
+        )}
       </div>
     ));
   };
@@ -96,8 +108,8 @@ export default function Portfolio(props) {
                   <iframe
                     src={pro.url}
                     frameBorder="0"
-                    className="xl:w-[96%]"
-                    style={{height: "500px", border: "none" }}
+                    className="xl:w-[96%] md:h-500 h-350"
+                    style={{ border: "none" }}
                   ></iframe>
                   <div className="cover-web"></div>
                   <div className=" w-3/4 text-left absolute bottom-15 left-15 text-white z-3">
@@ -106,10 +118,9 @@ export default function Portfolio(props) {
                       I used :
                       {pro?.tech.map((t, index) => {
                         return (
-                          <span
-                            key={index}
-                            className="text-white text-[16px]"
-                          >{t}</span>
+                          <span key={index} className="text-white text-[16px]">
+                            {t}
+                          </span>
                         );
                       })}
                       in this project.

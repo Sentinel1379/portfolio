@@ -18,6 +18,11 @@ export default function Header(props) {
   };
 
   useEffect(() => {
+    console.log(props.itemNum);
+    
+  } , [props.itemNum])
+
+  useEffect(() => {
     const sections = [
       { ref: props.heroRef, id: 1 },
       { ref: props.aboutMeRef, id: 2 },
@@ -28,7 +33,7 @@ export default function Header(props) {
 
     const options = {
       root: null,
-      threshold: 0.9, // می‌توانید این مقدار را بر اساس نیاز تغییر دهید
+      threshold: 0.7, // می‌توانید این مقدار را بر اساس نیاز تغییر دهید
     };
 
     const observerCallback = (entries) => {

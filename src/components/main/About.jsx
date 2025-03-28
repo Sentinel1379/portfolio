@@ -61,12 +61,16 @@ export default function About(props) {
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 200, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 50, // values from 0 to 3000, with step 50ms
+    duration: 100, // values from 0 to 3000, with step 50ms
     easing: "ease-in-out", // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
     mirror: true, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
+
+  // useEffect(() => {
+  //   console.log(props.aboutMeRef.current);
+  // }, []);
 
   return (
     <>
@@ -105,7 +109,7 @@ export default function About(props) {
             </div>
             <div className="mt-20">
               <h4>About me</h4>
-              <p className="Justify-text text-orange-btn min-h-200" ref={aboutRef}></p>
+              <p className="Justify-text text-orange-btn md:min-h-200 min-h-100" ref={aboutRef}></p>
             </div>
           </section>
 
@@ -144,7 +148,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="500"
+                data-aos-delay="450"
                 data-aos-once="true"
               >
                 <img
@@ -158,7 +162,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="800"
+                data-aos-delay="750"
                 data-aos-once="true"
               >
                 <img
@@ -172,7 +176,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="1100"
+                data-aos-delay="1050"
                 data-aos-once="true"
               >
                 <img
@@ -186,7 +190,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="1400"
+                data-aos-delay="1350"
                 data-aos-once="true"
               >
                 <img
@@ -200,7 +204,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="1700"
+                data-aos-delay="1650"
                 data-aos-once="true"
               >
                 <img
@@ -214,7 +218,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="2000"
+                data-aos-delay="1950"
                 data-aos-once="true"
               >
                 <img
@@ -228,7 +232,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="2300"
+                data-aos-delay="2250"
                 data-aos-once="true"
               >
                 <img
@@ -242,7 +246,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="2600"
+                data-aos-delay="2550"
                 data-aos-once="true"
               >
                 <img
@@ -256,7 +260,7 @@ export default function About(props) {
                 className="skill-back flex-center"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                data-aos-delay="2900"
+                data-aos-delay="2850"
                 data-aos-once="true"
               >
                 <img

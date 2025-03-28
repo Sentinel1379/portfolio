@@ -1,6 +1,72 @@
-@import './fonts/font.css';
 @import "tailwindcss";
+@import './font.css';
 @import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+@layer base {
+
+    @font-face {
+        font-family: Montserrat;
+        src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: Montserrat-bold;
+        src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: Roboto;
+        src: url("/fonts/Roboto/static/Roboto-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+
+    }
+
+    @font-face {
+        font-family: Open-Sans;
+        src: url("/fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+
+    }
+
+    @font-face {
+        font-family: Poppins;
+        src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+    }
+
+    body {
+        @apply bg-white-back font-roboto text-gray-text;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-montserrat-bold text-blue-dark;
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: var(--font-openSans);
+    }
+
+    button {
+        font-family: var(--font-openSans);
+    }
+}
 
 @theme {
     --color-blue-dark: #2c3e50;
@@ -38,71 +104,7 @@
 }
 
 
-@layer base {
 
-    @font-face {
-        font-family: Montserrat;
-        src: url("./Montserrat/static/Montserrat-Regular.ttf") format("truetype");
-        font-style: normal;
-
-    }
-
-    @font-face {
-        font-family: Montserrat-bold;
-        src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
-        font-style: normal;
-
-    }
-
-    @font-face {
-        font-family: Roboto;
-        src: url("./Roboto/static/Roboto-Regular.ttf") format("truetype");
-        font-style: normal;
-        font-weight: 200 700;
-        font-display: swap;
-
-    }
-
-    @font-face {
-        font-family: Open-Sans;
-        src: url("./Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
-        font-style: normal;
-        font-weight: 200 700;
-        font-display: swap;
-
-    }
-
-    @font-face {
-        font-family: Poppins;
-        src: url("./Poppins/Poppins-Regular.ttf") format("truetype");
-        font-style: normal;
-        font-weight: 200 700;
-        font-display: swap;
-    }
-
-    body {
-        @apply bg-white-back font-roboto text-gray-text;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply font-montserrat-bold text-blue-dark;
-    }
-
-    a {
-        text-decoration: none;
-        transition: 0.3s;
-        font-family: var(--font-openSans);
-    }
-
-    button {
-        font-family: var(--font-openSans);
-    }
-}
 
 .flex-center {
     @apply flex justify-center items-center;
@@ -163,7 +165,7 @@
 }
 
 .experience-title {
-    @apply relative w-full  md:text-[32px] text-[28px] font-bold mb-20 pb-10;
+    @apply relative w-full md:text-[32px] text-[28px] font-bold mb-20 pb-10;
 }
 
 .experience-title::before {
