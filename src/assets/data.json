@@ -106,7 +106,7 @@
             "id": 1,
             "url": "https://digikala-panel.vercel.app",
             "urlGitHub" : "https://github.com/Sentinel1379/digikalaPanel",
-            "src": "/portfolio/dgkala-panel.png",
+            "src": "/portfolio/shop.png",
             "title": "Sample of dgkala-panel site (Pesian)",
             "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "]
         },
