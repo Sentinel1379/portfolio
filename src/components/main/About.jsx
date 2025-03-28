@@ -3,6 +3,17 @@ import Typed from "typed.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import data from "../../assets/data.json";
+import person from "../../assets/8-Photoroom.png-Photoroom.png";
+import htmlIcon from "../../assets/html5-01-svgrepo-com.png";
+import CSSIcon from "../../assets/css-fill-svgrepo-com.png";
+import tailwindIcon from "../../assets/tailwind-css-svgrepo-com.png";
+import BootstrapIcon from "../../assets/bootstrap-fill-svgrepo-com.png";
+import SassIcon from "../../assets/sass-svgrepo-com.png";
+import ReactIcon from "../../assets/react-svgrepo-com.png";
+import NextIcon from "../../assets/nextjs-svgrepo-com.png";
+import TypeIcon from "../../assets/typescript-svgrepo-com.png";
+import ReduxIcon from "../../assets/redux-svgrepo-com.png";
+import GitIcon from "../../assets/git-svgrepo-com.png";
 
 export default function About(props) {
   const aboutRef = useRef(null);
@@ -73,7 +84,7 @@ export default function About(props) {
           <section className="xl:w-[60%] w-full px-12">
             <div className="flex items-center md:justify-start justify-center">
               <img
-                src="/src/assets/8-Photoroom.png-Photoroom.png"
+                src={person}
                 alt=""
                 className="size-150 rounded-full mr-10"
               />
@@ -123,7 +134,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/html5-01-svgrepo-com.png"
+                  src={htmlIcon}
                   alt="HTML-logo"
                   className="md:size-50 size-35"
                 />
@@ -137,7 +148,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/css-fill-svgrepo-com.png"
+                  src={CSSIcon}
                   alt="css-logo"
                   className="md:size-50 size-35"
                 />
@@ -151,7 +162,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/tailwind-css-svgrepo-com.png"
+                  src={tailwindIcon}
                   alt="tailwind-logo"
                   className="md:size-50 size-35"
                 />
@@ -165,7 +176,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/bootstrap-fill-svgrepo-com.png"
+                  src={BootstrapIcon}
                   alt="bootstrap-logo"
                   className="md:size-45 size-30"
                 />
@@ -179,7 +190,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/sass-svgrepo-com.png"
+                  src={SassIcon}
                   alt="sass-logo"
                   className="md:size-50 size-35"
                 />
@@ -193,7 +204,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/react-svgrepo-com.png"
+                  src={ReactIcon}
                   alt="react-logo"
                   className="md:size-50 size-35"
                 />
@@ -207,7 +218,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/nextjs-svgrepo-com.png"
+                  src={NextIcon}
                   alt="nextjs-logo"
                   className="md:size-60 size-40"
                 />
@@ -221,7 +232,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/typescript-svgrepo-com.png"
+                  src={TypeIcon}
                   alt="typescript-logo"
                   className="md:size-50 size-35"
                 />
@@ -235,7 +246,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/redux-svgrepo-com.png"
+                  src={ReduxIcon}
                   alt="Redux-logo"
                   className="md:size-50 size-35"
                 />
@@ -249,7 +260,7 @@ export default function About(props) {
                 data-aos-once="true"
               >
                 <img
-                  src="/src/assets/git-svgrepo-com.png"
+                  src={GitIcon}
                   alt="git-logo"
                   className="md:size-50 size-35"
                 />

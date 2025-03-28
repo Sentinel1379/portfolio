@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import data from "../../assets/data.json";
+import hero from "../../assets/hero-bg.jpg";
 
 export default function Summary(props) {
   const summaryRef = useRef();
@@ -47,8 +48,9 @@ export default function Summary(props) {
         className="overflow-clip md:px-80 px-10 section w-full min-h-[100vh] relative flex-center"
       >
         <div className="absolute size-full cover-box z-2"></div>
+        
         <img
-          src="/src/assets/hero-bg.jpg"
+          src={hero}
           alt=""
           className="absolute w-full h-full block object-cover z-1"
         />
