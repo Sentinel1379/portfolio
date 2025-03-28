@@ -106,7 +106,7 @@
             "id": 1,
             "url": "https://digikala-panel.vercel.app",
             "urlGitHub" : "https://github.com/Sentinel1379/digikalaPanel",
-            "src": "/public/portfolio/dgkala-panel.png",
+            "src": "/portfolio/dgkala-panel.png",
             "title": "Sample of dgkala-panel site (Pesian)",
             "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "]
         },
@@ -114,7 +114,7 @@
             "id": 1,
             "url": "https://sentinel1379.github.io/shop-tailwind/",
             "urlGitHub" : "https://github.com/Sentinel1379/shop-tailwind",
-            "src": "/public/portfolio/shop.png",
+            "src": "/portfolio/shop.png",
             "title": "Sample of shop-tailwind site (Pesian)",
             "tech": [" tailwindcss, " , "Resposive design, ..... "]
         },
