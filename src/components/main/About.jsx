@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,35 +17,39 @@ import GitIcon from "../../assets/git-svgrepo-com.png";
 
 export default function About(props) {
   const aboutRef = useRef(null);
+  const [typing, setTyping] = useState(true);
 
-  if(aboutRef.current) {
-    const typed = new Typed(aboutRef.current, {
-      strings: [data.about?.text],
-      typeSpeed: 35,
-      backSpeed: 50,
-      smartBackspace: true,
-      showCursor: false,
-      cursorChar: "|",
-      autoInsertCss: true,
-    });
-  }
-
-  // useEffect(() => {
+  // if(aboutRef.current) {
   //   const typed = new Typed(aboutRef.current, {
   //     strings: [data.about?.text],
-  //     typeSpeed: 50,
+  //     typeSpeed: 35,
   //     backSpeed: 50,
   //     smartBackspace: true,
   //     showCursor: false,
   //     cursorChar: "|",
   //     autoInsertCss: true,
   //   });
+  // }
 
-  //   return () => {
-  //     // Destroy Typed instance during cleanup to stop animation
-  //     typed.destroy();
-  //   };
-  // }, []);
+  useEffect(() => {
+    if (typing) {
+      const typed = new Typed(aboutRef.current, {
+        strings: [data.about?.text],
+        typeSpeed: 10,
+        backSpeed: 0,
+        smartBackspace: true,
+        showCursor: false,
+        cursorChar: "|",
+        autoInsertCss: false,
+      });
+      setTyping(false);
+    }
+
+    // return () => {
+    //   // Destroy Typed instance during cleanup to stop animation
+    //   typed.destroy();
+    // };
+  }, []);
 
   AOS.init({
     // Global settings:
@@ -109,7 +113,10 @@ export default function About(props) {
             </div>
             <div className="mt-20">
               <h4>About me</h4>
-              <p className="Justify-text text-orange-btn md:min-h-200 min-h-100" ref={aboutRef}></p>
+              <p
+                className="Justify-text text-orange-btn md:min-h-200 min-h-100"
+                ref={aboutRef}
+              ></p>
             </div>
           </section>
 

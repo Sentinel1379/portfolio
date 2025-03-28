@@ -236,7 +236,7 @@
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
     /* یا word-wrap: break-word; */
 }
 
