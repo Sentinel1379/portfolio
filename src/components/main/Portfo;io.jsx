@@ -11,9 +11,28 @@ import LoadingImage from "./LoadingImage";
 export default function Portfolio(props) {
   const carouselRef = useRef(null);
   const [thumbsLoaded, setThumbsLoaded] = useState({});
+  const [filter, setFilter] = useState("All");
+  const [listItem, setListItem] = useState(data.projects);
+
+  const filterPortgolio = () => {
+    let list;
+    if (filter === "All") {
+      list = data.projects.map((pro) => {
+        return pro;
+      });
+    } else {
+      list = data.projects.filter((pro) => pro.language === filter);
+    }
+
+    setListItem(list);
+  };
+
+  useEffect(() => {
+    filterPortgolio();
+  }, [filter]);
 
   const renderThumbs = () => {
-    return data.projects.map((pro, index) => (
+    return listItem?.map((pro, index) => (
       <div
         key={index}
         style={{ width: "100%", height: "auto", overflow: "hidden" }}
@@ -34,7 +53,10 @@ export default function Portfolio(props) {
           }}
         />
         {!thumbsLoaded[index] && (
-          <div className="absolute top-0 left-0 w-full h-full" title={`thumb-${index}`}>
+          <div
+            className="absolute top-0 left-0 w-full h-full"
+            title={`thumb-${index}`}
+          >
             <LoadingImage />
           </div>
         )}
@@ -58,7 +80,7 @@ export default function Portfolio(props) {
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 400, // values from 0 to 3000, with step 50ms
     easing: "ease-in-out", // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
+    once: true, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
@@ -91,18 +113,57 @@ export default function Portfolio(props) {
           <h2 className="portfolio-title flex-center">Portfolio</h2>
         </div>
 
+        <div className="container flex-center my-25">
+          <div className="tab-container">
+            <input
+              onClick={() => setFilter("All")}
+              type="radio"
+              name="tab"
+              id="tab1"
+              className="tab tab--1"
+            />
+            <label className="tab_label" htmlFor="tab1">
+              All
+            </label>
+
+            <input
+              onClick={() => setFilter("English")}
+              type="radio"
+              name="tab"
+              id="tab2"
+              className="tab tab--2"
+            />
+            <label className="tab_label" htmlFor="tab2">
+              English
+            </label>
+
+            <input
+              onClick={() => setFilter("Persian")}
+              type="radio"
+              name="tab"
+              id="tab3"
+              className="tab tab--3"
+            />
+            <label className="tab_label" htmlFor="tab3">
+              Persian
+            </label>
+
+            <div className="indicator"></div>
+          </div>
+        </div>
+
         <div className="container" ref={carouselRef}>
           <Carousel
             showArrows={false}
             emulateTouch={true}
-            infiniteLoop={true}
+            infiniteLoop={false}
             showStatus={false}
             showIndicators={false}
             renderThumbs={renderThumbs}
             dynamicHeight={false}
             ref={carouselRef}
           >
-            {data.projects.map((pro, index) => {
+            {listItem?.map((pro, index) => {
               return (
                 <div key={index} className="relative">
                   <iframe

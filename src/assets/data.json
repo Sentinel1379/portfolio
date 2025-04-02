@@ -103,68 +103,76 @@
     ],
     "projects": [
         {
-            "id": 1,
+            "id": 8,
             "url": "https://digikala-panel.vercel.app",
             "urlGitHub" : "https://github.com/Sentinel1379/digikalaPanel",
             "src": "/portfolio/dgkala-panel.png",
             "title": "Sample of dgkala-panel site (Pesian)",
-            "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "]
+            "tech": [" React.js, " , "Bootstrap, " , "SASS, " , "Resposive design, ..... "],
+            "language" : "Persian"
         },
         {
-            "id": 2,
+            "id": 7,
             "url": "https://sentinel1379.github.io/shop-tailwind/",
             "urlGitHub" : "https://github.com/Sentinel1379/shop-tailwind",
             "src": "/portfolio/shop.png",
             "title": "Sample of shop-tailwind site (Pesian)",
-            "tech": [" tailwindcss, " , "Resposive design, ..... "]
+            "tech": [" tailwindcss, " , "Resposive design, ..... "],
+            "language" : "English"
         },
         {
-            "id":3,
+            "id":6,
             "url": "https://zabanmehrpub-com-s4bb.vercel.app/",
             "urlGitHub" : "https://github.com/Sentinel1379/zabanmehrpub.com",
             "src": "/portfolio/zabanmehrpub.png",
             "title": "Sample of Zabanmehrpub site (Pesian)",
-            "tech": [" React.js, " , "Bootstrap, " , "Resposive design, ..... "]
+            "tech": [" React.js, " , "Bootstrap, " , "Resposive design, ..... "],
+            "language" : "Persian"
         },
         {
-            "id": 4,
+            "id": 5,
             "url": "https://sentinel1379.github.io/snappfood/",
             "urlGitHub" : "https://github.com/Sentinel1379/snappfood",
             "src": "/portfolio/snappfood.png",
             "title": "Sample of snappfood site (Pesian)",
-            "tech": [" SASS, " , "Bootstrap, " , "Resposive design, ..... "]
+            "tech": [" SASS, " , "Bootstrap, " , "Resposive design, ..... "],
+            "language" : "Persian"
         },
         {
-            "id": 5,
+            "id": 4,
             "url": "https://sentinel1379.github.io/Car-shop/",
             "urlGitHub" : "https://github.com/Sentinel1379/Car-shop",
             "src": "/portfolio/CarShop.png",
             "title": "Sample of Car-shop site (English)",
-            "tech": [ "Bootstrap, " , "Resposive design, ..... "]
+            "tech": [ "Bootstrap, " , "Resposive design, ..... "],
+            "language" : "English"
         },
         {
-            "id": 6,
+            "id": 3,
             "url": "https://sentinel1379.github.io/Tapsi.ir/",
             "urlGitHub" : "https://github.com/Sentinel1379/Tapsi.ir",
             "src": "/portfolio/tapsi.ir.png",
             "title": "Sample of Tapsi site (English)",
-            "tech": [ "SASS, " , "Resposive design, ..... "]
+            "tech": [ "SASS, " , "Resposive design, ..... "],
+            "language" : "Persian"
         },
         {
-            "id": 7,
+            "id": 2,
             "url": "https://sentinel1379.github.io/MyRestaurant/",
             "urlGitHub" : "https://github.com/Sentinel1379/MyRestaurant",
             "src": "/portfolio/MyRestaurant.png",
             "title": "Sample of MyRestaurant site (English)",
-            "tech": [ "SASS, " , "Resposive design, ..... "]
+            "tech": [ "SASS, " , "Resposive design, ..... "],
+            "language" : "Persian"
         },
         {
-            "id": 8,
+            "id": 1,
             "url": "https://sentinel1379.github.io/varzesh3.com/",
             "urlGitHub" : "https://github.com/Sentinel1379/varzesh3.com",
             "src": "/portfolio/varzesh3.com.png",
             "title": "Sample of varzesh3 site (English)",
-            "tech": [ "SASS, " , "Resposive design, ..... "]
+            "tech": [ "SASS, " , "Resposive design, ..... "],
+            "language" : "Persian"
         }
     ],
     "socialMedia" : {

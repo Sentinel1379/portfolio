@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import HeaderMob from "./components/hrader/HeaderMob";
 import Loading from "./components/main/Loading";
 import FontFaceObserver from 'fontfaceobserver';
+import ScrollToTop from "./components/main/ScrollToTop";
 
 export default function App() {
   const heroRef = useRef();
@@ -71,6 +72,7 @@ export default function App() {
         <Contact contactRef={contactRef} />
         <Footer />
         {loading && <Loading />}
+        <ScrollToTop/>
       </main>
     </>
   );
