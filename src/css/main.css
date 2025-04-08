@@ -103,7 +103,7 @@
 }
 
 .cover-box {
-    background: color-mix(in srgb, #f9f9f9, transparent 30%);
+    background: color-mix(in srgb, #f9f9f9, transparent 10%);
     /* background: color-mix(in srgb, color percentage, color percentage); */
 }
 

@@ -120,7 +120,7 @@ export default function HeaderMob(props) {
               closeMenu();
               scrollToSection(props.heroRef, 1);
             }}
-            style={{ backgroundColor: props.itemNum === 1 && "#2980b9" }}
+            style={{ backgroundColor: props.itemNum === 1 && "#2980b9" , marginBottom : "10px" }}
             className="group flex justify-start items-center font-montserrat-bold h-52 bg-[rgba(0,0,0,.1)] hover:bg-blue-light px-14 rounded-full cursor-pointer duration-300 mb-10"
           >
             <a href="#Home" className="flex-center">
@@ -143,7 +143,7 @@ export default function HeaderMob(props) {
               closeMenu();
               scrollToSection(props.aboutMeRef, 2);
             }}
-            style={{ backgroundColor: props.itemNum === 2 && "#2980b9" }}
+            style={{ backgroundColor: props.itemNum === 2 && "#2980b9" , marginBottom : "10px"  }}
             className="group flex justify-start items-center font-montserrat-bold h-52 bg-[rgba(0,0,0,.1)] hover:bg-blue-light px-14 rounded-full cursor-pointer duration-300 mb-10"
           >
             <a href="#About" className="flex-center">
@@ -166,7 +166,7 @@ export default function HeaderMob(props) {
               closeMenu();
               scrollToSection(props.workRef, 3);
             }}
-            style={{ backgroundColor: props.itemNum === 3 && "#2980b9" }}
+            style={{ backgroundColor: props.itemNum === 3 && "#2980b9" , marginBottom : "10px"  }}
             className="group flex justify-start items-center font-montserrat-bold h-52 bg-[rgba(0,0,0,.1)] hover:bg-blue-light px-14 rounded-full cursor-pointer duration-300 mb-10"
           >
             <a href="#Resume" className="flex-center">
@@ -189,7 +189,7 @@ export default function HeaderMob(props) {
               closeMenu();
               scrollToSection(props.portfolioRef, 4);
             }}
-            style={{ backgroundColor: props.itemNum === 4 && "#2980b9" }}
+            style={{ backgroundColor: props.itemNum === 4 && "#2980b9" , marginBottom : "10px"  }}
             className="group flex justify-start items-center font-montserrat-bold h-52 bg-[rgba(0,0,0,.1)] hover:bg-blue-light px-14 rounded-full cursor-pointer duration-300 mb-10"
           >
             <a href="#Portfolio" className="flex-center">

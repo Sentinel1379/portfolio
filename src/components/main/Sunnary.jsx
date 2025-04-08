@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import data from "../../assets/data.json";
-import hero from "../../assets/hero-bg.jpg";
+import hero from "../../assets/Screenshot 2025-04-06 160419.png";
 
 export default function Summary(props) {
   const summaryRef = useRef();
@@ -167,7 +167,7 @@ export default function Summary(props) {
                 </div>
 
                 <a
-                  href="/src/assets/SadeghAnalooeeCV3.pdf"
+                  href="/SadeghAnalooee(English).pdf"
                   download={true}
                   className="group relative w-120 md:h-50 h-38 bg-transparent hover:bg-blue-light hover:opacity-50 text-center rounded-[.45em] transition-all duration-300 cursor-pointer"
                 >
